@@ -3,7 +3,7 @@
 * Table of Contents
 {:toc}
 
-You've gotten used to creating lots of [commits and pushing those commits to GitHub](https://learn.firstdraft.com/lessons/50) so they are published forever and you never lose any work. That's great! Now let's look at some additional, common Git workflow steps to levelup.
+You've gotten used to creating lots of [commits and pushing those commits to GitHub](https://learn.firstdraft.com/lessons/50-git-commit-and-push) so they are published forever and you never lose any work. That's great! Now let's look at some additional, common Git workflow steps to levelup.
 
 ## Using GitLens for project history
 
