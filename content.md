@@ -1,8 +1,5 @@
 # Using Git version control: branch and merge
 
-* Table of Contents
-{:toc}
-
 You've gotten used to creating lots of [commits and pushing those commits to GitHub](https://learn.firstdraft.com/lessons/50-git-commit-and-push) so they are published forever and you never lose any work. That's great! Now let's look at some additional, common Git workflow steps to levelup.
 
 ## Using GitLens for project history
@@ -15,9 +12,12 @@ Your interface with the project history should come primarily through the graphi
 
 To open the Commit Graph, click on the graph icon in the Source Control tab:
 
+---
+
 <!-- ![](/assets/vscode-git-graph-open.png) -->
 ![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991249/vscode-git-graph-open_c8kg2w.png)
-{: .bleed-full }
+
+---
 
 Note that you can also find this button along the very bottom of the workspace window for another way to access the graph without visiting Source Control. 
 
@@ -50,15 +50,21 @@ This will bring up a dialog box showing the SHA (unique identifier) of that comm
 
 In that text field, you can type in a new name for the branch. Anything you want, just don't put any spaces:
 
+---
+
 <!-- ![](/assets/vscode-git-branch-off-commit-3.png) -->
 ![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991317/vscode-git-branch-off-commit-3_q0patk.png)
-{: .bleed-full }
+
+---
 
 When you press <kbd>Enter</kbd>, you will be asked to just create the branch or create the branch and switch to it. You want to switch to it:
 
+---
+
 <!-- ![](/assets/vscode-git-branch-off-commit-4.png) -->
 ![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991317/vscode-git-branch-off-commit-4_dyxll2.png)
-{: .bleed-full }
+
+---
 
 When completed, this action will snap all of the files in the project back to that point in time, and you can now make further commits along a new path — while still retaining all of your old commits on the old path.
 
@@ -88,15 +94,21 @@ If you're ever unsure of what branch you're on, look for that checkmark in the C
 
 As you are working on a new branch and making commits, the first time that you push changes to GitHub with the sync button in the Source Control tab, you will see the button says "Publish Branch": 
 
+---
+
 <!-- ![](/assets/vscode-git-publish-branch-1.png) -->
 ![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991450/vscode-git-publish-branch-1_yujqv7.png)
-{: .bleed-full }
+
+---
 
 When you click the button this first time, a dialog box will appear asking where you would like to publish the branch (i.e., which GitHub repository page you want the branch to exist on). You should select your current working repository, labelled `origin`:
 
+---
+
 <!-- ![](/assets/vscode-git-publish-branch-2.png) -->
 ![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991450/vscode-git-publish-branch-2_obxbag.png)
-{: .bleed-full }
+
+---
 
 After you publish the branch the first time, you can continue to commit and sync (push) as usual, and those commits will be published to the branch on GitHub.
 
@@ -131,27 +143,25 @@ To merge changes from e.g. `your-name-first-branch` into `main` remotely using G
 Back in VSCode, switch back to `main` in the Commit Graph (make sure the checkmark is on `main`) and:
 
 1. Fetch the merged version by clicking the "Fetch" button:
- 
-<!-- ![](/assets/vscode-git-fetch-changes-1.png) -->
-![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991525/vscode-git-fetch-changes-1_cbq8co.png)
-{: .bleed-full }
+
+    <!-- ![](/assets/vscode-git-fetch-changes-1.png) -->
+    ![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991525/vscode-git-fetch-changes-1_cbq8co.png)
 
 2. Select "origin" in the dialog box:
 
-<!-- ![](/assets/vscode-git-fetch-changes-2.png) -->
-![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991525/vscode-git-fetch-changes-2_gq3fl9.png)
-{: .bleed-full }
+    <!-- ![](/assets/vscode-git-fetch-changes-2.png) -->
+    ![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991525/vscode-git-fetch-changes-2_gq3fl9.png)
 
 3. Click the "Pull" button that appears in the Commit Graph:
 
-<!-- ![](/assets/vscode-git-fetch-changes-3.png) -->
-![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991526/vscode-git-fetch-changes-3_mwqwwv.png)
-{: .bleed-full }
+    <!-- ![](/assets/vscode-git-fetch-changes-3.png) -->
+    ![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991526/vscode-git-fetch-changes-3_mwqwwv.png)
 
 4. Confirm the pull with the first option "Pull":
 
-<!-- ![](/assets/vscode-git-fetch-changes-4.png) -->
-![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991526/vscode-git-fetch-changes-4_o26tnn.png)
-{: .bleed-full }
+    <!-- ![](/assets/vscode-git-fetch-changes-4.png) -->
+    ![](https://res.cloudinary.com/dmxgp9oq2/image/upload/v1685991526/vscode-git-fetch-changes-4_o26tnn.png)
 
 Now you can continue working on your `main` branch, which will include all of the changes from your merged pull request.
+
+---
